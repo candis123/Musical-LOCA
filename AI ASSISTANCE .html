@@ -70,43 +70,16 @@
             border-radius: 8px;
         }
 
-        .options {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .option {
-            flex: 0 0 100%;
-        }
-
-        .option h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        textarea {
+        .iframe-container {
             width: 100%;
-            height: 100px;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: none;
+            height: 2000px; /* Adjust height as needed */
+            overflow: hidden; /* Hide any overflow content */
         }
 
-        button {
-            background-color: #333;
-            color: #fff;
-            padding: 8px 16px;
+        iframe {
+            width: 100%;
+            height: 100%;
             border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #555;
         }
 
         .back-link {
@@ -135,21 +108,16 @@
     </header>
     <main>
         <h2>AI Assistant</h2>
-        <a href="https://theselyricsdonotexist.com/" class="external-link" target="_blank">Generate Original Song Lyrics</a>
-        <div class="options">
-            <div class="option">
-                <h3>Song Ideas</h3>
-                <p>Type here to generate song ideas:</p>
-                <textarea id="beats-input"></textarea>
-                <button onclick="generateBeats()">Generate Song Ideas</button>
-                <div id="beats-output"></div>
-            </div>
+        <div class="external-link-container">
+            <a href="https://typli.ai/ai-writer/song-lyric-generator" class="external-link" target="_blank">Visit Song Lyric Generator</a>
+        </div>
+        <div class="iframe-container">
+            <iframe src="https://typli.ai/ai-writer/song-lyric-generator" frameborder="0" scrolling="no"></iframe>
         </div>
         <a href="index.html" class="back-link">Back to Home</a>
     </main>
     <footer>
         <p>&copy; 2024 Musical LOCA. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
