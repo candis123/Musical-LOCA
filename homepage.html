@@ -17,9 +17,47 @@
         .event-card, .post-card, .artist-card {
             width: 300px; /* Set the width of each card */
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid #555; /* Dark gray border */
+            border-radius: 10px;
             cursor: pointer;
+            background-color: #222; /* Dark background */
+            color: #fff; /* White text color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dark shadow */
+            transition: transform 0.3s ease;
+        }
+        .event-card:hover, .post-card:hover, .artist-card:hover {
+            transform: translateY(-5px); /* Hover effect */
+        }
+        h1, h2, h3 {
+            font-family: 'Arial', sans-serif; /* Neutral font */
+            font-size: 2.5rem; /* Bigger font size */
+            color: #FFA500; /* Orange color for headings */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+        }
+        body {
+            color: #fff; /* White text color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+            background-image: url('https://imgur.com/v7KbwXU'); /* Background image with the text */
+            background-repeat: repeat; /* Repeat the image */
+        }
+        footer {
+            background-color: #222; /* Dark background for footer */
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #FFA500; /* Orange border on top */
+        }
+        .tablink {
+            font-size: 1.2rem; /* Increase font size for tabs */
+            background-color: #555; /* Dark gray background for tabs */
+            color: #fff; /* White text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounder tabs */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .tablink:hover {
+            background-color: #777; /* Slightly lighter gray on hover */
         }
     </style>
 </head>
@@ -120,7 +158,6 @@
     <footer>
         <p>&copy; 2024 Musical LOCA. All rights reserved.</p>
     </footer>
-    <!-- Add your JavaScript files at the end of the body to ensure proper loading -->
-    <script src="main.js"></script>
 </body>
 </html>
+
